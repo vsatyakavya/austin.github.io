@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #3333;
+    background-color: white;
 }
 
    
@@ -31,7 +31,18 @@ figure{
     
     display: flex;
     flex-direction: column;
-    margin:5px;
+    margin:0 10px 0 0;
+    margin-Top :20px
+
+}
+.images{
+    border-radius:10px;
+
+    
+}
+
+.images:hover{
+    box-shadow:15px 15px 50px 15px #888888;
 
 }
 
