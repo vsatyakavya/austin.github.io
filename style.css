@@ -1,25 +1,8 @@
+/*To avoid applying padding length to left and right side of the element*/
 *{
-    box-sizing:border-box
+    box-sizing: border-box;
 }
-/* img{
 
-    margin:0 auto;
-    display: block; 
- width :100%;
- height :50%
-    
-} */
-/* #container{
-    /* width :1024px; */
-    /* margin: 0 auto; */
- 
-/* #first,#second,#third{
-display:flex;
-flex-direction :row;
-align-items: center;
-justify-content: space-between;
-flex:1;
-*/
 body{
     background-color: #3333;
 }
@@ -28,58 +11,62 @@ body{
 
 
 
-    
-
-/* .images {
-    flex:1;
-    margin :10px;
-}  */
+/* header padding 20px on top and bottom 0px on left and reight*/
 header{
-    background :linear-gradient(rgb(189, 92, 18), rgb(163, 121, 121));
+    padding : 20 0 ;
 }
+
+
 .container{
+    /* To align all the images in a row*/
     display :flex;
+    /* To wrap the images according to screen size*/
     flex-wrap: wrap;
-    /* padding :5px; */
+    /* To display the images in center of the screen*/
     justify-content: center;
-    /* flex-direction: row;
-/ align-items: center; */
-  
-/* margin:10px */
 }
+
+/* To display image and title as a column with margin*/
 figure{
+    
     display: flex;
     flex-direction: column;
     margin:5px;
 
 }
 
-
+/* To fit the title according to the screen*/
 #title{
     max-width:100%;
     border-radius :20px
 
 }
+/* applying css effetcs to p tag and hidding to for now*/
 p{
     text-align:center;
     background:white;
     font-size :30px;
     display:none
 }
+
+/*typography and box model effects to h1 tag*/
 h1{
+    background :linear-gradient(rgb(189, 92, 18), rgb(163, 121, 121));
+
     font-size: 40px;
     padding:20px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align:center;
     color :rgb(236, 221, 221)
 }
+
 h1:hover {
     font-size:50px;
 }
-
+/* showing p tag when hover on h1 */
 h1:hover + p{
   color: rgb(166, 255, 0);
-  font-size: 50px;
+  font-size: 30px;
   display : block;
 
 }
