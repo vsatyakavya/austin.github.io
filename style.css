@@ -116,7 +116,7 @@ h1:hover + p{
       bottom:10px;
   }
   #animated_div {
-    width: 70px;
+    width: 100px;
     height: 47px;
     background: #92B901;
     color: #ffffff;
@@ -124,55 +124,21 @@ h1:hover + p{
     font-weight: bold;
     font-size: 20px;
     padding: 10px;
-    /* margin-top:2opx; */
-    animation: animated_div 5s 1;
-    -moz-animation: animated_div 5s 1;
-    -webkit-animation: animated_div 5s 1;
-    -o-animation: animated_div 5s 1;
     border-radius: 5px;
-    -webkit-border-radius: 5px;
+    animation-name: example;
+    animation-duration: 5s;
+  animation-timing-function: linear;
+  /* animation-delay: 2s; */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+    
   }
-  *, *:before, *:after {
-    box-sizing: inherit;
-}
-@keyframes animated_div {
-0% {
-    transform: rotate(
-0deg
-);
-    left: 0px;
-}
-
-25% {
-    transform: rotate(
-20deg
-);
-    left: 0px;
-}
-50% {
-    transform: rotate(
-0deg
-);
-    left: 500px;
-}
-55% {
-    transform: rotate(
-0deg
-);
-    left: 500px;
-}
-70% {
-    transform: rotate(
-0deg
-);
-    left: 500px;
-    background: #1ec7e6;
-}
-100% {
-    transform: rotate(
--360deg
-);
-    left: 0px;
-}
-}
+  @keyframes example {
+    0%   {background-color:red; left:500px; top:0px;}
+    25%  {background-color:yellow; left:700px; top:0px;}
+    50%  {background-color:blue; left:900px; top:0;}
+    75%  {background-color:green; left:700px; top:0px;}
+    100% {background-color:red; left:500px; top:0px;}
+  }
 
