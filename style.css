@@ -67,6 +67,9 @@ box-shadow: 0 0 10px 10px #bdbcbc;
     font-size :30px;
     display:none
 }
+.para::first-letter{
+    font-size:30pt;
+}
 
 /*typography and box model effects to h1 tag*/
 h1{
