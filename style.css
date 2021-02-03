@@ -28,13 +28,18 @@ header{
 
 /* To display image and title as a column with margin*/
 figure{
+    /* width:33.3%; */
+    /* display: flex;
     
-    display: flex;
     flex-direction: column;
+    justify-content: center; */
+    align-items: center;
     margin:0 10px 0 0;
-    margin-Top :20px
+    margin-Top :20px;
 
 }
+
+
 .images{
     border-radius:10px;
 
@@ -56,7 +61,7 @@ box-shadow: 0 0 10px 10px #bdbcbc;
 
 }
 /* applying css effetcs to p tag and hidding to for now*/
-p{
+#greeting{
     text-align:center;
     background:white;
     font-size :30px;
@@ -78,7 +83,7 @@ h1:hover {
     font-size:50px;
 }
 /* showing p tag when hover on h1 */
-h1:hover + p{
+h1:hover + #greeting{
   color: rgb(166, 255, 0);
   font-size: 30px;
   display : block;
